@@ -11,7 +11,7 @@ const Login = () => import('@/views/login/Login')
 
 // Users Management
 const UsersMain = () => import('@/views/users/UsersMain')
-//const Dashboard = () => import('@/views/Dashboard')
+const Dashboard = () => import('@/views/Dashboard')
 const EventHome = () => import('@/views/EventHome')
 const Featured = () => import('@/views/featured/Featured')
 const Navigation = () => import('@/views/navigation/Navigation')
@@ -27,6 +27,8 @@ const CMS = () => import('@/views/CMS')
 const UserEvents = () => import('@/views/event/UserEvents')
 const Tax = () => import('@/views/tax/Tax')
 const EventManagement = () => import('@/views/event_management/EventManagement')
+const Profile = () => import('@/views/profile/Profile')
+const Announcement = () => import('@/views/announcement/Announcement')
 
 
 Vue.use(Router)
@@ -87,6 +89,13 @@ export default new Router({
         },
 
         {
+          path: 'profile',
+          name: 'Profile',
+          beforeEnter: guard, // Using guard before entering the route
+          component: Profile,
+        },
+
+        {
           path: 'cms',
           name: 'CMS',
           beforeEnter: guard, // Using guard before entering the route
@@ -101,6 +110,7 @@ export default new Router({
           component: Dashboard
         },
         */
+
         {
           path: 'navigation',
           name: 'Navigation',
@@ -176,6 +186,13 @@ export default new Router({
           name: 'Tax Calculator Data',
           beforeEnter: guard,
           component: Tax,
+        },
+
+        {
+          path: 'announcement',
+          name: 'Announcement',
+          beforeEnter: guard,
+          component: Announcement,
         },
 
         /*

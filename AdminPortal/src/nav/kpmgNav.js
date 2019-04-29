@@ -24,6 +24,7 @@ export default {
         attributes: {}
       }
     },
+
     /*
     {
       name : 'Dashboard',
@@ -31,6 +32,7 @@ export default {
       icon : 'fa fa-home'
     },
     */
+
     {
       name : 'User Management',
       url: '/kpmg/users',
@@ -121,6 +123,12 @@ export default {
       url: '/kpmg/tax',
       icon : 'fa fa-calculator'
     },
+
+    {
+      name: 'Announcements',
+      url: '/kpmg/announcement',
+      icon: 'fa fa-volume-up'
+    }
 
     /*
     {

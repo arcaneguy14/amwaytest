@@ -132,7 +132,7 @@
                 handlers: {
                   'customControl': () => {
                     console.log('customControl was clicked')
-                    this.quill.insertText(this.quill.getSelection(true).index, "<sponsorhere/>");
+                    this.editor.insertText(this.editor.getSelection(true).index, "<sponsorhere/>");
                   }
                 }
               }

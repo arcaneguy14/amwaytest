@@ -8,7 +8,7 @@
     </template>
     <template slot="dropdown">
       <b-dropdown-header tag="div" class="text-center"><strong>Account</strong></b-dropdown-header>
-      <b-dropdown-item><i class="fa fa-user" /> My Profile</b-dropdown-item>
+      <b-dropdown-item v-on:click="profile"><i class="fa fa-user" /> My Profile</b-dropdown-item>
       <b-dropdown-divider />
       <b-dropdown-item v-on:click="closeNav"><i class="fa fa-lock" /> Logout </b-dropdown-item>
     </template>
@@ -33,6 +33,10 @@ export default {
         .then(
           this.$router.push({ name: 'Login' })
         )
+    },
+
+    profile () {
+      this.$router.push({ name: 'Profile' })
     }
   },
 }

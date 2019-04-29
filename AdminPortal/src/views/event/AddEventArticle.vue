@@ -34,7 +34,13 @@
     <b-row>
       <b-col>
         <b-form-group label="Content:">
-          <text-editor v-model="model"></text-editor>
+          <text-editor v-model="model">
+            <template v-slot:customButton>
+              <span class="ql-formats">
+                  <button class="ql-customControl" style="width: 100px; text-align: left; display: contents;"><i class="fa fa-building"></i> Add Sponsor</button>
+              </span>
+            </template>
+          </text-editor>
         </b-form-group>
 
         <b-form-group id="genPwd" label="" label-for="genPass">

@@ -22,7 +22,7 @@
             <b-form @submit="onSubmit" @reset="onReset" id="addInsightsMainText" v-if="show">
             <b-row>
               <b-col>
-                <text-editor v-model="model" :isEditing="isEditing"></text-editor>
+                <text-editor v-model="model"></text-editor>
               </b-col>
             </b-row>
             <b-row class="mt-3">
