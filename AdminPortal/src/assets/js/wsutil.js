@@ -11,7 +11,7 @@ export const wsutil = new Vuex.Store({
     state : {
         jwtToken : localStorage.getItem("jwtToken") || null,
         rfhToken : localStorage.getItem("rfhToken") || null,
-        apiBaseUrl : "https://dev-api.gogogo.my",
+        apiBaseUrl : "https://omniathena.apjcsboa.com",
         curAct : "",
         temp: "",
         userProfile : {},
@@ -83,9 +83,9 @@ export const wsutil = new Vuex.Store({
             context.commit('clearToken');
         },
         userLogin(context, credentials){
-            let rq = {"data": [{"user": credentials.username,"password": credentials.password, "fb_token": "", "google_token": ""}]};
+            let rq = {"data": [{"username": credentials.username,"password": credentials.password}]};
             return new Promise((resolve, reject) => {
-                axios.post(wsutil.state.apiBaseUrl + '/api/v2/makeUserLogin', JSON.stringify(rq))
+                axios.post(wsutil.state.apiBaseUrl + '/api/v2/userLogin', JSON.stringify(rq))
                 .then(response => {
                     if (response.data.respcode == '0'){
                         //Store new token and call again the api

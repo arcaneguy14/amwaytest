@@ -114,17 +114,14 @@
 </template>
 
 <script>
-import { VueEditor } from 'vue2-quill-editor';
 import AddUser from './AddUser'
-import  EditUser from './EditUser'
+import EditUser from './EditUser'
 import {HollowDotsSpinner  } from 'epic-spinners'
-//import BCol from "bootstrap-vue/src/components/layout/col";
 
 let items = []
 
 export default {
   components: {
-      VueEditor,
       'add-user': AddUser,
       'edit-user': EditUser,
       HollowDotsSpinner
