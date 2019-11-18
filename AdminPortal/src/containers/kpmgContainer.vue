@@ -3,8 +3,8 @@
     <AppHeader fixed>
       <SidebarToggler class="d-lg-none" display="md" mobile />
       <a class="navbar-brand" href="#">
-        <img class="navbar-brand-full" src="img/logo.svg" width="110" height="65" alt="KPMG Logo">
-        <img class="navbar-brand-minimized" src="img/logo.svg" width="70" height="60" alt="KPMG Logo">
+        <img class="navbar-brand-full" src="img/logonew.png" width="110" height="65" alt="KPMG Logo">
+        <img class="navbar-brand-minimized" src="img/logonew.png" width="70" height="60" alt="KPMG Logo">
       </a>
       <SidebarToggler class="d-md-down-none" display="lg" />
       <b-navbar-nav class=" ml-auto">

@@ -19,7 +19,7 @@
               <b-card no-body class="py-5 hide-mobile">
                 <b-card-body class="text-center">
                   <b-row class="justify-content-center">
-                    <img src="img/logo.svg" height="150"/>
+                    <img src="img/logonew.png" height="150"/>
                     <h1 class="font-weight-bold" style="color: #fff; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #0B2D65;"><u>Admin Portal</u></h1>
                   </b-row>
                 </b-card-body>
@@ -30,7 +30,7 @@
                 <b-card-body>
                   <b-form action="#" @submit.prevent="validateBeforeSubmit">
                     <div class="show-mobile text-center">
-                      <img src="img/logo.svg" height="150"/>
+                      <img src="img/logonew.png" height="150"/>
                       <h1 class="font-weight-bold" style="color: #fff; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #0B2D65;"><u>Admin Portal</u></h1>
                     </div>
                     <h1>Login</h1>

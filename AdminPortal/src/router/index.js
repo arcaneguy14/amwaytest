@@ -29,6 +29,8 @@ const Tax = () => import('@/views/tax/Tax')
 const EventManagement = () => import('@/views/event_management/EventManagement')
 const Profile = () => import('@/views/profile/Profile')
 const Announcement = () => import('@/views/announcement/Announcement')
+const AmwayTest = () => import('@/views/amway_preq/AmwayTest')
+
 
 
 Vue.use(Router)
@@ -193,6 +195,13 @@ export default new Router({
           name: 'Announcement',
           beforeEnter: guard,
           component: Announcement,
+        },
+
+        {
+          path: 'amway_preq',
+          name: 'AmwayTest',
+          beforeEnter: guard,
+          component: AmwayTest,
         },
 
         /*

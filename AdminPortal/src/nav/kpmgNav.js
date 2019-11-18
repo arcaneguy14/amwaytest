@@ -1,5 +1,6 @@
 export default {
   items: [
+    /*
     {
       title: true,
       name: 'Switch Mode',
@@ -9,12 +10,14 @@ export default {
         attributes: {}
       }
     },
+
     {
       name : 'Switch to Event Mode',
       url: '/event',
       class: 'small',
       icon: 'fa fa-arrow-left'
     },
+    */
     {
       title: true,
       name: 'Base',
@@ -33,6 +36,7 @@ export default {
     },
     */
 
+    /*
     {
       name : 'User Management',
       url: '/kpmg/users',
@@ -43,6 +47,9 @@ export default {
       url: '/kpmg/navigation',
       icon : 'fa fa-compass'
     },
+    */
+
+    /*
     {
       title: true,
       name: 'KPMG APP',
@@ -57,7 +64,7 @@ export default {
       url: '/kpmg/featured',
       icon : 'fa fa-star'
     },
-    /*
+
     {
       name : 'Insights',
       url: '/kpmg/insights',
@@ -100,6 +107,8 @@ export default {
     },
 */
 
+    /*
+
     {
       name : 'CMS',
       url: '/kpmg/cms',
@@ -128,6 +137,14 @@ export default {
       name: 'Announcements',
       url: '/kpmg/announcement',
       icon: 'fa fa-volume-up'
+    },
+
+    */
+
+    {
+      name: 'AmwayTest',
+      url: '/kpmg/amway_preq',
+      icon: 'fa fa-calculator'
     }
 
     /*
